@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-我的第一篇博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/06/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2025-06-28T13:30:14.000Z" itemprop="datePublished">2025-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/06/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>C++98 是 C++ 标准的第一个版本，而 C++11 及之后则带来了大量新特性和改进，它们在多个方面存在明显差异,需要进行学习</p>
+<h1 id="一-、auto自动类型推导"><a href="#一-、auto自动类型推导" class="headerlink" title="一 、auto自动类型推导"></a>一 、auto自动类型推导</h1><p>简而言之,auto可以自动推导数据类型</p>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="1-推导数据类型"><a href="#1-推导数据类型" class="headerlink" title="1.推导数据类型"></a>1.推导数据类型</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span>  i = <span class="number">5</span>; <span class="comment">// int</span></span><br><span class="line"><span class="keyword">auto</span> str = <span class="string">&quot;hello world&quot;</span> <span class="comment">//const char*</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-推导返回值类型"><a href="#2-推导返回值类型" class="headerlink" title="2.推导返回值类型"></a>2.推导返回值类型</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">auto</span> <span class="title">sum</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-for循环"><a href="#3-for循环" class="headerlink" title="3.for循环"></a>3.for循环</h3><p>下面给出for循环三种方式,读者可以对比</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">map&lt;string, <span class="type">int</span>&gt; mp;</span><br><span class="line">mp[<span class="string">&quot;apple&quot;</span>] = <span class="number">1</span>;</span><br><span class="line">mp[<span class="string">&quot;banana&quot;</span>] = <span class="number">2</span>;</span><br><span class="line">mp[<span class="string">&quot;cherry&quot;</span>] = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">for</span> (map&lt;string, <span class="type">int</span>&gt;::iterator it = mp.<span class="built_in">begin</span>(); it != mp.<span class="built_in">end</span>(); it++) &#123;</span><br><span class="line">	cout &lt;&lt; (*it).first &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it = mp.<span class="built_in">begin</span>(); it != mp.<span class="built_in">end</span>(); it++) &#123;</span><br><span class="line">	cout &lt;&lt; (*it).first &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it : mp) &#123;</span><br><span class="line">	cout &lt;&lt; it.first &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h2><h3 id="1-无法推导"><a href="#1-无法推导" class="headerlink" title="1.无法推导"></a>1.无法推导</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> i ;</span><br><span class="line">i =<span class="number">5</span>; <span class="comment">// 报错,在第一行auto无法推导i的类型</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-理解复杂"><a href="#2-理解复杂" class="headerlink" title="2.理解复杂"></a>2.理解复杂</h3><p>假设一个程序中存在大量auto,程序员今天可能理解auto含义,明天可能就忘记了</p>
+<h1 id="二-、const-iterator常量迭代器"><a href="#二-、const-iterator常量迭代器" class="headerlink" title="二 、const_iterator常量迭代器"></a>二 、const_iterator常量迭代器</h1><p>在 C++ 里，<strong>const_iterator</strong> 是一种特殊的<strong>迭代器</strong>，其作用是在遍历容器时保证不会修改容器内的元素</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; vec = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span> &#125;;</span><br><span class="line"><span class="comment">//vector&lt;int&gt;::iterator it = find(vec.begin(), vec.end(), 4);</span></span><br><span class="line">	</span><br><span class="line">vector&lt;<span class="type">int</span>&gt;::const_iterator it = <span class="built_in">find</span>(vec.<span class="built_in">begin</span>(), vec.<span class="built_in">end</span>(), <span class="number">4</span>);</span><br><span class="line">vec.<span class="built_in">insert</span>(it, <span class="number">6</span>); <span class="comment">// 4之前插入6 </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在不需要修改元素的场景下，推荐使用 <strong>const_iterator</strong> 来增强代码的健壮性。</p>
+<h1 id="三-、noexcept抛出异常"><a href="#三-、noexcept抛出异常" class="headerlink" title="三 、noexcept抛出异常"></a>三 、noexcept抛出异常</h1><h2 id="作为异常规范​"><a href="#作为异常规范​" class="headerlink" title="作为异常规范​"></a>作为异常规范​</h2><p>用于声明函数​<strong>​不会抛出任何异常​</strong>​：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">func</span><span class="params">()</span> <span class="keyword">noexcept</span></span>; <span class="comment">// 保证不抛出异常</span></span><br></pre></td></tr></table></figure>
+
+<p>编译器知道 noexcept函数不会抛出异常后，可以省略异常处理机制，提高运行效率</p>
+<h1 id="四-、tuple元组"><a href="#四-、tuple元组" class="headerlink" title="四 、tuple元组"></a>四 、tuple元组</h1><h2 id="1-创建元组"><a href="#1-创建元组" class="headerlink" title="1.创建元组"></a>1.创建元组</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;tuple&gt;</span></span></span><br><span class="line">    <span class="keyword">auto</span> student = <span class="built_in">make_tuple</span>(<span class="number">3.8</span>, <span class="string">&#x27;A&#x27;</span>, <span class="string">&quot;张三&quot;</span>); <span class="comment">//创建元组</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-获取元素"><a href="#2-获取元素" class="headerlink" title="2.获取元素"></a>2.获取元素</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    std::cout &lt;&lt; <span class="string">&quot;ID: 0, &quot;</span>&lt;&lt; <span class="string">&quot;GPA: &quot;</span></span><br><span class="line">        &lt;&lt; std::<span class="built_in">get</span>&lt;<span class="number">0</span>&gt;(student) &lt;&lt; <span class="string">&quot;, &quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;成绩: &quot;</span> &lt;&lt; std::<span class="built_in">get</span>&lt;<span class="number">1</span>&gt;(student) &lt;&lt; <span class="string">&quot;, &quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;姓名: &quot;</span> &lt;&lt; std::<span class="built_in">get</span>&lt;<span class="number">2</span>&gt;(student) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="3-修改元素"><a href="#3-修改元素" class="headerlink" title="3.修改元素"></a>3.修改元素</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    std::<span class="built_in">get</span>&lt;<span class="number">0</span>&gt;(student) = <span class="number">1.1</span>;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;ID: 0, &quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;GPA: &quot;</span> &lt;&lt; std::<span class="built_in">get</span>&lt;<span class="number">0</span>&gt;(student) &lt;&lt; <span class="string">&quot;,&quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;成绩: &quot;</span> &lt;&lt; std::<span class="built_in">get</span>&lt;<span class="number">1</span>&gt;(student) &lt;&lt; <span class="string">&quot;, &quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;姓名: &quot;</span> &lt;&lt; std::<span class="built_in">get</span>&lt;<span class="number">2</span>&gt;(student) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong><br>tuple可以修改元素,但不能添加元素,修改元素元素的类型应该相同</p>
+<h2 id="4-tie解包元组​"><a href="#4-tie解包元组​" class="headerlink" title="4.tie解包元组​"></a>4.tie解包元组​</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    <span class="type">double</span> gpa;</span><br><span class="line">    <span class="type">char</span> grade;</span><br><span class="line">    std::string name;</span><br><span class="line">    std::<span class="built_in">tie</span>(gpa, grade, name) = std::<span class="built_in">make_tuple</span>(<span class="number">2.9</span>, <span class="string">&#x27;C&#x27;</span>, <span class="string">&quot;李四&quot;</span>);</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;ID: 1, &quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;GPA: &quot;</span> &lt;&lt; gpa &lt;&lt; <span class="string">&quot;, &quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;成绩: &quot;</span> &lt;&lt; grade &lt;&lt; <span class="string">&quot;, &quot;</span></span><br><span class="line">        &lt;&lt; <span class="string">&quot;姓名: &quot;</span> &lt;&lt; name &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h1 id="五-、explicit禁止隐式类型转换"><a href="#五-、explicit禁止隐式类型转换" class="headerlink" title="五 、explicit禁止隐式类型转换"></a>五 、explicit禁止隐式类型转换</h1><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">A</span>(<span class="type">int</span> x):<span class="built_in">num</span>(x)&#123;&#125;</span><br><span class="line"><span class="comment">//    explicit A(int x):num(x)&#123;&#125;报错</span></span><br><span class="line">    <span class="type">int</span> num;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">fun</span><span class="params">(A a)</span></span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    A a = <span class="number">10</span>;</span><br><span class="line">    cout&lt;&lt;a.num&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="​STL-中为什么广泛使用-explicit？"><a href="#​STL-中为什么广泛使用-explicit？" class="headerlink" title="​STL 中为什么广泛使用 explicit？"></a>​STL 中为什么广泛使用 explicit？</h2><ul>
+<li>防止意外的隐式类型转换​</li>
+<li>避免歧义和代码可读性问题​</li>
+</ul>
+<h1 id="六-、mutable修改变量"><a href="#六-、mutable修改变量" class="headerlink" title="六 、mutable修改变量"></a>六 、mutable修改变量</h1><h2 id="const成员函数修改变量"><a href="#const成员函数修改变量" class="headerlink" title="const成员函数修改变量"></a>const成员函数修改变量</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">()</span> <span class="type">const</span></span>&#123;</span><br><span class="line">        num++;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;num的值为:&quot;</span>&lt;&lt;num&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">mutable</span> <span class="type">int</span> num=<span class="number">0</span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    A a;</span><br><span class="line">    a.<span class="built_in">print</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="lambda修改变量"><a href="#lambda修改变量" class="headerlink" title="lambda修改变量"></a>lambda修改变量</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    <span class="type">int</span> number =<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">auto</span> fun = [number]()<span class="keyword">mutable</span>&#123;</span><br><span class="line">        number++;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;number的值为:&quot;</span>&lt;&lt;number&lt;&lt;endl;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="built_in">fun</span>(); <span class="comment">//number值传递,加上mutable可以修改</span></span><br></pre></td></tr></table></figure>
+<h1 id="七-、decltype推导表达式类型​​"><a href="#七-、decltype推导表达式类型​​" class="headerlink" title="七 、decltype推导表达式类型​​"></a>七 、decltype推导表达式类型​​</h1><h2 id="推导表达式类型"><a href="#推导表达式类型" class="headerlink" title="推导表达式类型"></a>推导表达式类型</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    <span class="type">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">decltype</span>(a) b;</span><br><span class="line">​​<span class="comment">//借助a推导</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="结合auto"><a href="#结合auto" class="headerlink" title="结合auto"></a>结合auto</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T1,<span class="keyword">class</span> T2&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">auto</span> <span class="title">add</span><span class="params">(T1 a,T2 b)</span> -&gt;<span class="title">decltype</span><span class="params">(a+b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a+b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">auto</span> ans = <span class="built_in">add</span>(<span class="number">10</span>,<span class="number">10</span>);</span><br><span class="line">    cout&lt;&lt;ans&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>欢迎大家在评论区留言指正</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/06/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="cmcga7cpd0001fww73wg59vxo" data-title="我的第一篇博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/06/28/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2025-06-28T13:18:18.425Z" itemprop="datePublished">2025-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/06/28/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/06/28/hello-world/" data-id="cmcga7cp10000fww7hbku5lwm" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/06/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
+          </li>
+        
+          <li>
+            <a href="/2025/06/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
