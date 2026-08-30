@@ -1,0 +1,12 @@
+/* 求职型博客的轻量定制：克制、清晰、突出内容 */
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  font-weight: 700;
+}
+.post-content pre {
+  border-radius: 10px;
+}
+.post-content img {
+  border-radius: 10px;
+}
