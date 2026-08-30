@@ -2,6 +2,7 @@
 title: Hello，世界
 subtitle: 我的技术博客开始了
 date: 2026-01-01 10:00:00
+updated: 2026-08-30 19:20:00
 categories:
   - 随笔
 tags:

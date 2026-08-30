@@ -1,3 +1,6 @@
+code:
+  copy_btn: true
+
 navbar:
   blog_title: 陈建扬
   menu:
@@ -20,9 +23,24 @@ about:
   intro: 计算机专业学生，正在寻找 Java 后端开发相关机会。
 
 post:
+  meta:
+    min2read:
+      enable: true
+      awl: 2
+      wpm: 60
+  updated:
+    enable: true
+    date_format: "LL"
+    relative: false
+    note_class: info
   toc:
     enable: true
+    expand_all: true
     placement: right
+    headingSelector: "h1,h2,h3,h4,h5,h6"
+    collapseDepth: 0
+  prev_next:
+    enable: true
   copyright:
     enable: true
 

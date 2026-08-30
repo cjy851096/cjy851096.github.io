@@ -2,6 +2,7 @@
 title: Spring Boot 统一异常处理的基本实践
 subtitle: 让接口错误响应保持一致
 date: 2026-01-03 10:00:00
+updated: 2026-08-30 19:20:00
 categories:
   - Spring
   - 面试笔记

@@ -2,6 +2,7 @@
 title: Java 集合框架学习笔记：如何选择 List、Set 和 Map
 subtitle: 从使用场景出发理解常用集合
 date: 2026-01-02 10:00:00
+updated: 2026-08-30 19:20:00
 categories:
   - Java
   - 面试笔记
