@@ -1,0 +1,32 @@
+{
+  "name": "chen-jianyang-blog",
+  "version": "1.0.0",
+  "description": "陈建扬的个人技术博客",
+  "private": true,
+  "scripts": {
+    "clean": "hexo clean",
+    "build": "hexo generate",
+    "dev": "hexo server",
+    "deploy": "hexo deploy",
+    "new": "hexo new"
+  },
+  "dependencies": {
+    "hexo": "^7.3.0",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-fluid": "github:fluid-dev/hexo-theme-fluid#master"
+  },
+  "devDependencies": {
+    "hexo-cli": "^4.3.2"
+  },
+  "hexo": {
+    "version": "7.3.0"
+  }
+}

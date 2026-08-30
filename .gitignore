@@ -1,0 +1,8 @@
+public/
+.deploy_git/
+node_modules/
+themes/fluid/
+db.json
+.DS_Store
+Thumbs.db
+*.log

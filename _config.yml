@@ -1,0 +1,41 @@
+title: 陈建扬
+subtitle: 计算机专业学生 · 技术学习与实践
+description: 陈建扬的个人技术博客，记录 Java、后端开发与计算机基础学习。
+author: 陈建扬
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://cjy851096.github.io/jianyangchen
+root: /jianyangchen/
+permalink: :year/:month/:day/:title/
+post_asset_folder: true
+source_dir: source
+public_dir: public
+archive_dir: archives
+tag_dir: tags
+category_dir: categories
+new_post_name: :year-:month-:day-:title.md
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace: '  '
+
+index_generator:
+  path: ''
+  per_page: 6
+
+# 使用本项目内的 Fluid 主题
+theme: fluid
+
+deploy:
+  type: git
+  repository: https://github.com/cjy851096/jianyangchen.git
+  branch: gh-pages
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+  path: sitemap.xml

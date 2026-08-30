@@ -1,0 +1,39 @@
+navbar:
+  blog_title: 陈建扬
+  menu:
+    - { key: "home", name: "首页", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "projects", name: "项目", link: "/projects/", icon: "iconfont icon-code" }
+    - { key: "archive", name: "技术文章", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "interview", name: "面试笔记", link: "/interview/", icon: "iconfont icon-book" }
+    - { key: "about", name: "关于我", link: "/about/", icon: "iconfont icon-user-fill" }
+
+index:
+  slogan:
+    enable: true
+    text: "记录技术，积累成长"
+  banner_img: ""
+
+about:
+  enable: true
+  avatar: /img/avatar.svg
+  name: 陈建扬
+  intro: 计算机专业学生，正在寻找 Java 后端开发相关机会。
+
+post:
+  toc:
+    enable: true
+    placement: right
+  copyright:
+    enable: true
+
+footer:
+  content: "用代码记录成长 · 陈建扬"
+
+color:
+  body_bg_color: '#f7f9fc'
+  body_text_color: '#263238'
+  navbar_bg_color: '#ffffff'
+  navbar_text_color: '#263238'
+  font_family: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+  link_color: '#2563eb'
+  primary_color: '#2563eb'
