@@ -29,6 +29,15 @@ post:
 footer:
   content: "用代码记录成长 · 陈建扬"
 
+custom_css:
+  - /css/custom.css
+
+static_prefix:
+  jquery: /vendor/jquery/
+  bootstrap: /vendor/bootstrap/
+  typed: /vendor/typed/
+  nprogress: /vendor/nprogress/
+
 color:
   body_bg_color: '#f7f9fc'
   body_text_color: '#263238'

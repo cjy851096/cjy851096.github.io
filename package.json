@@ -21,7 +21,11 @@
     "hexo-renderer-marked": "^7.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-fluid": "github:fluid-dev/hexo-theme-fluid#master"
+    "hexo-theme-fluid": "github:fluid-dev/hexo-theme-fluid#master",
+    "jquery": "3.6.4",
+    "bootstrap": "4.6.1",
+    "typed.js": "2.0.12",
+    "nprogress": "0.2.0"
   },
   "devDependencies": {
     "hexo-cli": "^4.3.2"
