@@ -11,7 +11,7 @@ npm run dev
 
 访问 http://localhost:4000。
 
-线上地址：https://cjy851096.github.io/jianyangchen/
+线上地址：https://cjy851096.github.io/
 
 ## 发布
 

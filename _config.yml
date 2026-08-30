@@ -4,8 +4,8 @@ description: 陈建扬的个人技术博客，记录 Java、后端开发与计�
 author: 陈建扬
 language: zh-CN
 timezone: Asia/Shanghai
-url: https://cjy851096.github.io/jianyangchen
-root: /jianyangchen/
+url: https://cjy851096.github.io
+root: /
 permalink: :year/:month/:day/:title/
 post_asset_folder: true
 source_dir: source
@@ -29,7 +29,7 @@ theme: fluid
 
 deploy:
   type: git
-  repository: https://github.com/cjy851096/jianyangchen.git
+  repository: git@github.com:cjy851096/cjy851096.github.io.git
   branch: gh-pages
 
 feed:
